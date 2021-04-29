@@ -1,0 +1,19 @@
+@mixin  transition($time) {
+    -webkit-transition: all $time ease-in-out;
+            -moz-transition: all $time ease-in-out;
+            -o-transition: all $time ease-in-out;
+            transition: all $time ease-in-out;
+}
+
+
+@mixin  shapes($widthheight,$borderRadius : 50%) {
+
+    width: $widthheight;
+    height: $widthheight;
+    border-radius: $borderRadius;
+    content: '';
+position: absolute;
+
+
+}
+
